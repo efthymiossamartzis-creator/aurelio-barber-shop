@@ -1,0 +1,56 @@
+{
+  "slug": "fade",
+  "summary": "Fade is a free two-page barbershop and men's grooming website template built on Bootstrap 5, with a distinctive dark-charcoal-and-brass identity set in condensed Oswald over Barlow. It covers everything a shop needs — hero, services and pricing, barbers, a filterable cuts gallery with lightbox, an online booking form, a grooming shop, a loyalty band, hours and testimonials — plus a full About page. Every interaction is plain vanilla JavaScript with no jQuery, and content stays visible with JavaScript disabled.",
+  "features": [
+    "Two pages: home plus an About page with shop story and stats",
+    "Dot-leader services and pricing list with durations",
+    "Four-barber crew row that prefills the booking form",
+    "Filterable cuts gallery with a keyboard-accessible lightbox",
+    "Vanilla booking form: barber, service, date and time with live validation",
+    "Grooming shop grid with add-to-bag counter and toast",
+    "Auto-hiding sticky navbar and count-up stats on IntersectionObserver",
+    "Loyalty membership band, hours table with map link, and testimonials slider",
+    "100% vanilla JavaScript, no jQuery, progressive enhancement with reduced-motion support"
+  ],
+  "bestFor": [
+    "Barbershops and men's grooming studios",
+    "Traditional and modern barber brands",
+    "Salons offering shaves and beard work",
+    "Local shops taking online bookings",
+    "Grooming product sellers needing a storefront section"
+  ],
+  "faqs": [
+    {
+      "q": "Is Fade free to use, including for a commercial barbershop?",
+      "a": "Yes. Fade is free and follows the standard uiCookies license, which covers commercial use such as a real barbershop or grooming brand. The one requirement is attribution, and the exact terms are on the uiCookies license page. There is no locked premium tier — the download is the complete two-page template."
+    },
+    {
+      "q": "Does the booking form actually take appointments?",
+      "a": "Not on its own. Fade is a static front-end template, so the booking form is fully built and validated in the browser but has no backend attached. It captures the barber, service, date and time and shows a confirmation state, but to receive real bookings you point the form at your own server-side handler, a form service, or a scheduling tool like Calendly or Square Appointments. Nothing is sent or stored until you wire it up."
+    },
+    {
+      "q": "Can I change the services, prices and barbers?",
+      "a": "Absolutely — that is the point. The service names, prices and durations live as plain text in the pricing list in index.html, and each barber is a self-contained card you can duplicate or remove. Swap the copy, update the numbers and replace the photos to match your shop. No build step is required to edit the HTML."
+    },
+    {
+      "q": "How do I change the colours and fonts?",
+      "a": "The whole palette is defined as CSS custom properties at the top of css/style.css — the charcoal base, brass gold and oxblood red are each a single variable, so you can rebrand the site by editing a handful of values in one place. The type pairing (Oswald for display, Barlow for body) is loaded from Google Fonts in the page head and referenced through the --display and --body variables, so a new pairing is a two-line change."
+    },
+    {
+      "q": "Does Fade use jQuery or any plugins?",
+      "a": "No. Fade is completely jQuery-free with no third-party plugins. The mobile menu, auto-hiding navbar, gallery filtering, lightbox, booking validation, add-to-bag counter, count-up stats and testimonials slider are all written in plain vanilla JavaScript in js/main.js, one function per feature. Bootstrap's own bundle is included for its components, and that is the only script dependency."
+    },
+    {
+      "q": "Will the site still work if JavaScript is disabled?",
+      "a": "Yes. Fade is built with progressive enhancement, so all content is visible and readable without JavaScript. The scroll-reveal animations only hide elements under a `.js` class that is added at the top of the page, which means if scripts do not run, nothing is ever left stuck at zero opacity. Interactive extras like the lightbox and add-to-bag simply degrade gracefully."
+    },
+    {
+      "q": "Is Fade accessible and keyboard-friendly?",
+      "a": "It is built with accessibility in mind. The pages use semantic landmarks, every image has descriptive alt text, and custom widgets carry appropriate ARIA roles and states. The lightbox traps focus and closes on Escape with arrow-key navigation, the gallery filter and booking form are fully operable by keyboard, focus styles are visible throughout, and all motion respects the visitor's reduced-motion preference."
+    },
+    {
+      "q": "How many pages and sections does Fade include?",
+      "a": "Fade ships as two pages. The home page carries the hero, services and pricing, the barbers row, a filterable cuts gallery, the booking section, a why-us block, a grooming products shop, a membership band, hours and location, and testimonials. The About page adds the shop story, count-up stats, the crew and a second gallery. You can reorder or delete any section since each is a self-contained block of markup."
+    }
+  ]
+}
